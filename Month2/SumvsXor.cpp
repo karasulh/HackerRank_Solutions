@@ -15,6 +15,12 @@ long sumXor(long n) {
     return result;
     */
     
+    /*//Another Solution
+    for (unsigned long long i = 1; i > 0 && i < n; i = i << 1)
+        bin_zeros += !(n & i);
+        return pow(2,bin_zeros);
+    */
+    
     //Think it as bits 5=101=>Take Xor of it => 2=010 => res=0_0=> 010 and 000 =>2
     //10=1010 => xored:0101 => result combination of it:0_0_ => 4 different choice
     int p=0;
